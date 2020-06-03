@@ -1,93 +1,83 @@
 /* #*/ export const PERSON = `
-name:
-  first: John
-  middle:
-  last: Doe
-about: Hi, my name is John Doe. I"m just about the most boring type of person you could
-       possibly imagine. I like collecting leaves from the tree in my back yard and documenting
-       each time I eat a peanut that is non-uniform. I am not a robot. Please hire me.
-position: Software Developer
-
-birth:
-  year: 1990
-  location: New York
+name: Eric Jalbert
+about: Standing at the intersection of data engineering and analytics, I use my skills to resolve problems with a solution that is tailored for each situation. I am adept at getting a minimal product shipped or optimizing to perfection.
+position: Data Engineer
+contact:
+  email: ericmjalbert@gmail.com
+  city: Markham, Ontario, Canada
+  website: ericmjalbert.com
+  github: ericmjalbert
+  linkedin: ericmjalbert
+  
+lang: en
 
 experience:
-- company: Company A
-  position: Developer
-  timeperiod: since January 2016
-  description: Programming and watching cute cat videos.
-  website: https://example.com
+- company: Ada Support
+  position: Data Engineer
+  timeperiod: June 2019 - April 2020
+  description:
+    - Optimized ETL and Analytics Dashboarding layer to maintain a 99.9% data processing SLO.
+    - Grew into leading a team of 3 Data Engineers.
+    - Setup and managed Looker to enable data driven decisions.
+    - Created streaming ETL to process over 1k/records per second.
 
-- company: Company B
-  position: Frontend Developer
-  timeperiod: January 2015 - December 2015
-  description: Fulfillment of extremely important tasks.
+- company: RubyLife
+  position: Data Engineer
+  timeperiod: May 2018 - June 2019
+  description:
+    - Developed interactive web app to allow for efficient A/B test analysis.
+    - Architectured and implemented a scalable ETL that processed over 10GB of user data per day.
+    - Setup and optimized Spark server for Data Scientist usage.
+    - Created payload validation system to reduce QA effort.
 
-- company: Company C
-  position: Trainee
-  timeperiod: March 2014 - December 2014
-  description: Making coffee and baking cookies.
+- company: theScore, Inc.
+  position: Sr. Data Analyst
+  timeperiod: Dec 2017 - May 2018
+  description:
+    - Enabled deep understanding of user reviews by writing an ETL to get reviews from app store and augment them with sentiment analysis and TF-IDF data.
+    - Increased analysis confidence and reproducibility by developing a custom postgreSQL integration testing framework inheriting functionality from Python unittest
+
+- company: theScore, Inc.
+  position: Data Engineer
+  timeperiod: Jan 2017 - Dec 2017
+  description:
+    - Coordinated analytics tracking framework transition.
+    - Optimized AWS Redshift performance by automating table VACUUM operations and by managing disk usage on slices.
+
+- company: theScore, Inc.
+  position: Data Analyst
+  timeperiod: Feb 2016 - Jan 2017
+  description:
+    - Raised analytical knowledge by presenting theoretical machine learning concepts and how it could be applied for business gains.
+
 
 education:
-- degree: Master of Arts
-  timeperiod: March 2012 - December 2013
-  description: Major in Hacking and Computer Penetration, University A, New York, USA.
-  website: https://example.com
+- degree: MSc. Applied Mathematics
+  institution: University of Guelph
+  timeperiod: Jan 2014 - Jan 2016
+  thesis: http://atrium.lib.uoguelph.ca/xmlui/handle/10214/9448
+  publications: https://www.mendeley.com/authors/55932631800/
 
-- degree: Bachelor of Science
-  timeperiod: March 2009 - December 2011
-  description: Major in Engineering, University B, Los Angeles, USA.
+- degree: BSc. Applied Mathematics
+  institution: University of Guelph
+  timeperiod: Sept 2010 - Dec 2013
+  
+  
 
-# skill level goes 0 to 100
+
 skills:
-- name: HTML5
-  level: 99
-- name: CSS3
-  level: 95
-- name: JavaScript
-  level: 97
-- name: Node.js
-  level: 93
-- name: Angular 2
-  level: 60
-- name: TypeScript
-  level: 80
-- name: ES.Next
-  level: 70
-- name: Docker
-  level: 99
-knowledge: Also proficient in Adobe Photoshop and Illustrator, grew up bilingual
-  (English and Klingon).
+- name: Data Analytics
+  highlights:
+    - Used Bokeh/seaborn with Jupyter notebooks to create analytical stories for providing insights.
+    - Avid follower of the principles of reproducible research.
+    - Educated others on theory and application of hypothesis tests for different A/B testing scenarios.
+    - Conducted multiple-correlation analysis and regressions using R and Python.
+    - Simulated A/A tests results to compare Permutation tests, T-test, Mann-Whitney-Wilcoxon Test for performance with  non-normal and normally distributed data.
+    - Presented deep analysis using scikit-learn to find hidden relations.
 
-projects:
-- name: best-resume-ever
-  platform: Vue
-  timeperiod: February 2016
-  description: 👔 💼 Build fast 🚀 and easy multiple beautiful resumes and create your best CV ever! Made with Vue and LESS.
-  url: https://github.com/salomonelli/best-resume-ever
-
-hobbies:
-- name: Video Games
-  iconClass: fa fa-gamepad
-  url: https://example.com
-
-- name: Drawing
-  iconClass: fa fa-pencil
-  url: https://example.com
-
-contributions:
-- name: best-resume-ever
-  description: 👔 💼 Build fast 🚀 and easy multiple beautiful resumes.
-  url: https://github.com/salomonelli/best-resume-ever
-
-contact:
-  email: john.doe@email.com
-  phone: 0123 456789
-  street: 1234 Broadway
-  city: New York
-  website: johndoe.com
-  github: johnyD
-# en, de, fr, pt, ca, cn, it, es, th, pt-br, ru, sv, id, hu, pl, ja, ka, nl, he, zh-tw, lt, ko, el, nb-no
-lang: en
+- name: Engineering
+  highlights:
+    - Experience using a comprehensive techstack to perform ETL and data warehousing tasks like Kafka Connect, EC2, S3, Lambda, Kinesis, Redshift.
+    - Wrote scripts to automate manual tasks; used Shell scripts, Python scripts, and other third-party libraries.
+    - Capable of setting up infrastructure as code using Docker, Terraform, and Ansible for development and production use cases.
 `
